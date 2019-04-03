@@ -16,7 +16,7 @@ class ClienteController{
 //        $sql .= '"' . $cliente->getEndereco() . '",'
 //        $sql .= '"' . $cliente->getEmail() . '",';
 //        $sql .= '"' . $cliente->getSenha() . '",';
-//        $sql .= '"' . $cliente->getTelefone() . '")';
+//        $sql .= '"' . $cliente->getTelefone() . '")'
 
         $db = Conexao::getInstance();
         $stmt = $db->prepare($sql);
