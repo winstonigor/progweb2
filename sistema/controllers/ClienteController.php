@@ -13,7 +13,7 @@ class ClienteController{
 
 //        $sql .= '"' . $cliente->getNome() . '",';
 //        $sql .= '"' . $cliente->getCpf() . '",';
-//        $sql .= '"' . $cliente->getEndereco() . '",';
+//        $sql .= '"' . $cliente->getEndereco() . '",'
 //        $sql .= '"' . $cliente->getEmail() . '",';
 //        $sql .= '"' . $cliente->getSenha() . '",';
 //        $sql .= '"' . $cliente->getTelefone() . '")';
