@@ -16,7 +16,8 @@ if (isset($_POST['salvar'])){
     $cliente->setEmail ($_POST['email']);
 
 
-    echo ClienteController::inserir($cliente);
+    ClienteController::inserir($cliente);
+    header('Location:listaClientes.php');
     //echo var_dump($cliente);
 
 }
@@ -87,6 +88,8 @@ if (isset($_POST['salvar'])){
                                     <input type="text" class="form-control"placeholder="(00) 0-0000-0000" name="telefone">
                                 </div>
                                 <button class="btn btn-primary" type="submit" name="salvar">Salvar</button>
+
+
                             </div><!--form-row-->
                         </form>
                     </div><!-- Card-Body -->
